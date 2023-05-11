@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+            height: 300px;
+        }
+
+        .xanh{
+            background-color: blue;
+            color: white;
+        }
+
+        #ct{
+            background-color: brown;
+            color: white;
+        }
+
+        .vnd{
+            background-color: yellow;
+        }
+
+        td{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th class="xanh">STT</th>
+            <th class="xanh">Khóa Học</th>
+            <th class="xanh">Thời Gian Học</th>
+            <th class="xanh">Học Phí</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Lap trinh PHP(CB)</td>
+            <td>8h->10h(2,4,6)</td>
+            <td class="vnd">1000000VNĐ</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Photoshop(NC)</td>
+            <td>20h->22h(3,5,CN)</td>
+            <td class="vnd">500000VNĐ</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Flash(CB)</td>
+            <td>8h->10h(2,4,6)</td>
+            <td class="vnd">800000VNĐ</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Front End</td>
+            <td>8h->10h(2,4,6)</td>
+            <td rowspan="2" class="vnd">800000VNĐ</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Back End</td>
+            <td>8h->10h(2,4,6)</td>
+        </tr>
+        <tr>
+            <th colspan="4" id="ct">Chi tiet lien he: 0123456789</th>
+        </tr>
+    </table>
+</body>
+</html>
