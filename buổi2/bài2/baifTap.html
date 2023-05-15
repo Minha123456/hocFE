@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 350px;
+            height: 330px;
+        }
+        .FN{
+            width: 100px;
+            height: 30px;
+            font-weight: 600;
+        }
+
+        .FL{
+            width: 85% ;
+            margin-left: 5px;
+        }
+
+        #DC{
+            height: 35px;
+        }
+
+        #ĐK{
+            height: 30px;
+            font-size: 19px;
+        }
+
+        #ĐL{
+            height: 32px;
+        }
+
+        .O{
+            width: 60px;
+            height: 25px;
+            background-color: rgb(48, 37, 208);
+            color: white;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <table border="1px">
+            <tr>
+                <th colspan="2" id="ĐK">ĐĂNG KÝ</th >
+            </tr>
+            <tr>
+                <td class="FN">Fullname</td>
+                <td>
+                    <input class="FL" type="text" placeholder="Nhập fullname..." required>
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Username</td>
+                <td>
+                    <input class="FL" type="text" placeholder="Nhập username" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Password</td>
+                <td>
+                    <input class="FL" type="password" placeholder="Nhập password" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Nhập lại password</td>
+                <td>
+                    <input class="FL" type="password" placeholder="Nhập lại password">
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Giới tính</td>
+                <td>
+                    <label class="cs" for="">
+                        <span>Nam</span>
+                        <input type="radio" value="Nam" name="gender">
+                        <span>Nữ</span>
+                        <input type="radio" value="Nữ" name="gender">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Ngày sinh</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Địa chỉ</td>
+                <td>
+                    <input id="DC" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Avatar</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td class="FN">Sở thích</td>
+                <td>
+                    <label for="">
+                        <input type="checkbox" value="Xem phim" name="SoThich"> Xem Phim
+                        <input type="checkbox" value="Thể thao" name="SoThich"> Thể thao
+                        <input type="checkbox" value="Web" name="SoThich"> Web
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" id="ĐL">
+                    <input class="O" type="Reset">
+                    <input class="O" type="submit" value="OK">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
