@@ -85,8 +85,10 @@ p{
 }
 
 #PP{
-    font-size: 10px;
+    font-size: 13px;
     padding-right: 3px;
+    text-align: left;
+    margin-left: 8px;
 }
 
 .ZE{
