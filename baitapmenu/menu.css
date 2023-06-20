@@ -1,0 +1,79 @@
+body{
+    background-image: url('../baitapmenu/imgdemo/istockphoto-1370858067-612x612.jpg');
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+.container{
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header{
+    background-color: #78b43d;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: start;
+}
+
+#logo{
+    padding: 5px 0px;
+}
+
+#logo img{
+    max-width: 50px;
+    height: auto;
+}
+
+#main-menu{
+    display: flex;
+    list-style: none;
+}
+
+#main-menu li{
+    position: relative;
+}
+
+#main-menu li a{
+    color: #f8f8f8;
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #78b43d;
+    padding: 15px 10px;
+    list-style: none;
+    width: 150px;
+    border: 1px solid green;
+    display: none;
+}
+
+#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+
+#main-menu ul.sub-menu a{
+    padding: 3px 10px;
+    border-bottom: 1px solid green;
+    left: 0px;
+}
+
+#main-menu ul.sub-menu li:hover>a{
+    border-bottom: 1px solid #78b43d;
+}
+
+#main-menu ul.sub-menu li:last-of-type a{
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 160px;
+    top: -3px;
+}
