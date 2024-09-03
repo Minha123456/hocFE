@@ -7,10 +7,13 @@ body{
 .container{
     width: 960px;
     margin: 0px auto;
+    justify-content: center;
 }
 
 #header{
     background-color: #78b43d;
+    width: 100%;
+
 }
 
 nav{
@@ -21,16 +24,19 @@ nav{
 
 #logo{
     padding: 5px 0px;
+    justify-content: flex-start;
 }
 
 #logo img{
     max-width: 50px;
     height: auto;
+    margin-left: 14px;
 }
 
 #main-menu{
     display: flex;
     list-style: none;
+
 }
 
 #main-menu li{
@@ -48,14 +54,14 @@ nav{
 #main-menu ul.sub-menu{
     position: absolute;
     background-color: #78b43d;
-    padding: 15px 10px;
+    padding: 5px 10px;
     list-style: none;
     width: 150px;
     border: 1px solid green;
     display: none;
 }
 
-#main-menu li:hover ul.sub-menu{
+#main-menu li:hover>ul.sub-menu{
     display: block;
 }
 

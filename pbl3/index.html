@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tuoi Cay Tu Dong</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" href="./anh/">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+<div class="wrapMain">
+	<div class="line1">
+        <div class="logo">
+        	<button id="logoBtn1" onclick="alert1()">VAN 1</button>
+        	<button id="logoBtn2" onclick="alert2()">VAN 2</button>
+        	<button id="logoBtn3" onclick="alert3()">VAN 3</button>
+        </div>
+        
+        <div class="timer">
+        	<div class="titleTimer">HẸN GIỜ</div>
+            <table border="1" align="center" id="table_Timer">
+                <tr class="titleTableData">
+                    <th class="Table_Timer">Cây 1</th>
+                    <th class="Table_Timer">Cây 2</th>
+                    <th class="Table_Timer">Cây 3</th>
+                </tr>
+                <tr>
+                    <th class="Table_Timer">
+                        <div>
+                            <label class="switch" >
+                                <input type="checkbox" id="Timer_DAM_state">
+                                <span class="slider round"></span>
+                            </label>
+                        <div>
+                            </div>
+                            <div class="On_Off_Text" id="On_Text">ON:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_DAM_Hour_On">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                </select>
+                                
+                            </div>
+                            <div class="On_Off_Text">:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_DAM_Min_On">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            </div>
+                            <div class="On_Off_Text">OFF:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_DAM_Hour_Off">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                </select>
+                                
+                            </div>
+                            <div class="On_Off_Text">:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_DAM_Min_Off">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="Table_Timer">
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox" id="Timer_LAN_state">
+                                <span class="slider round"></span>
+                            </label>
+                        <div>
+                            </div>
+                            <div class="On_Off_Text" id="On_Text">ON:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_LAN_Hour_On">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                </select>
+                                
+                            </div>
+                            <div class="On_Off_Text">:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_LAN_Min_On">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            </div>
+                            <div class="On_Off_Text">OFF:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_LAN_Hour_Off">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                </select>
+                                
+                            </div>
+                            <div class="On_Off_Text">:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_LAN_Min_Off">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="Table_Timer">
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox" id="Timer_KALI_state">
+                                <span class="slider round"></span>
+                            </label>
+                        <div>
+                            </div>
+                            <div class="On_Off_Text" id="On_Text">ON:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_KALI_Hour_On">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                </select>
+                                
+                            </div>
+                            <div class="On_Off_Text">:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_KALI_Min_On">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            </div>
+                            <div class="On_Off_Text">OFF:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_KALI_Hour_Off">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                </select>
+                                
+                            </div>
+                            <div class="On_Off_Text">:</div>
+                            <div class="dropdown">
+                                <select  class="dropdown-select" id="Timer_KALI_Min_Off">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+            <button id="Update_Button">UPDATE</button>
+        </div>
+    </div>
+    <div class="line2">
+    	<p class="Title_Data" align="center">HỆ THỐNG QUẢN LÝ CÁC THÔNG SỐ TƯỚI CÂY TỰ ĐỘNG</p>
+        <table class="Data_Table" width="98%" border="1">
+        	<tr class="titleTableData">
+            	<th></th>
+                <th colspan="1">ĐẤT</th>
+                <th colspan="3">KHÔNG KHÍ</th>
+                <th >Thời gian</th>
+            </tr>
+            <tr class="titleTableData">
+            	<th>CÂY</th>
+                <th>ĐỘ ẨM<br>(%)</th>
+                <th>NHIỆT ĐỘ<br>(độ C)</th>
+                <th>ĐỘ ẨM<br>(%)</th>
+                <th>ÁNH SÁNG<br>(LUX)</th>
+                <th class="Table_Status" id="Date_Table_Status"></th>
+            </tr>
+            <tr>
+            	<th class="Table_Status" id="1id">-</th>
+                <th class="Table_Status" id="1humd">-</th>
+                <th class="Table_Status" id="1temk">-</th>
+                <th class="Table_Status" id="1humk">-</th>
+                <th class="Table_Status" id="1lux">-</th>
+                <th class="Table_Status" id="1tg">-</th>
+            </tr>
+            <tr>
+                <th class="Table_Status" id="2id">-</th>
+                <th class="Table_Status" id="2humd">-</th>
+                <th class="Table_Status" id="2temk">-</th>
+                <th class="Table_Status" id="2humk">-</th>
+                <th class="Table_Status" id="2lux">-</th>
+                <th class="Table_Status" id="2tg">-</th>
+            </tr>
+            <tr>
+                <th class="Table_Status" id="3id">-</th>
+                <th class="Table_Status" id="3humd">-</th>
+                <th class="Table_Status" id="3temk">-</th>
+                <th class="Table_Status" id="3humk">-</th>
+                <th class="Table_Status" id="3lux">-</th>
+                <th class="Table_Status" id="3tg">-</th>
+            </tr>
+            <tr>
+       <th class="Table_Status" id="1id">-</th>
+                <th class="Table_Status" id="4humd">-</th>
+                <th class="Table_Status" id="4temk">-</th>
+                <th class="Table_Status" id="4humk">-</th>
+                <th class="Table_Status" id="4lux">-</th>
+                <th class="Table_Status" id="4tg">-</th>
+            </tr>
+            <tr>
+            <th class="Table_Status" id="1id">-</th>
+                <th class="Table_Status" id="5humd">-</th>
+                <th class="Table_Status" id="5temk">-</th>
+                <th class="Table_Status" id="5humk">-</th>
+                <th class="Table_Status" id="5lux">-</th>
+                <th class="Table_Status" id="5tg">-</th>
+            </tr>
+			<tr>
+          <th class="Table_Status" id="1id">-</th>
+                <th class="Table_Status" id="6humd">-</th>
+                <th class="Table_Status" id="6temk">-</th>
+                <th class="Table_Status" id="6humk">-</th>
+                <th class="Table_Status" id="6lux">-</th>
+                <th class="Table_Status" id="6tg">-</th>
+            </tr>
+			<tr>
+                <th class="Table_Status" id="7id">-</th>
+                <th class="Table_Status" id="7humd">-</th>
+                <th class="Table_Status" id="7temk">-</th>
+                <th class="Table_Status" id="7humk">-</th>
+                <th class="Table_Status" id="7lux">-</th>
+                <th class="Table_Status" id="7tg">-</th>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--Thư viện Fisebase-->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+ apiKey: "AIzaSyDg8gG59Zlicvzx6M9DCGN-a3fVCUHEb6Y",
+    authDomain: "smarten-50dfc.firebaseapp.com",
+    databaseURL: "https://smarten-50dfc.firebaseio.com",
+    projectId: "smarten-50dfc",
+    storageBucket: "smarten-50dfc.appspot.com",
+    messagingSenderId: "309220198384",
+    appId: "1:309220198384:web:d6d1e453a00ad3d6bcff35",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>    
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+        <script>
+            var sum = 0;
+
+            function tinh_Tong(a, b){
+                sum = a + b;
+                document.write("tong cua a + b = " + sum +"<br>");
+            }
+
+            var a=tinh_Tong(1, 2);
+
+            var hieu = 0;
+            function tinh_hieu(a, b){
+                hieu = a - b;
+                document.write("hieu cua a - b = " + hieu + "<br>");
+
+            }
+            var b=tinh_hieu(25, 12);
+
+            var tich = 1;
+            function tinh_tich(a, b){
+                tich = a * b;
+                document.write("tich cua a * b =" +tich+"<br>");
+
+            }
+            var c=tinh_tich(25, 30);
+
+            var thuong = 1;
+            function tinh_thuong(a, b){
+                thuong = a/b;
+                document.write("thuong cua a/b = " +thuong+"<br>");
+
+            }
+            var d=tinh_thuong(750, 25);
+
+            var hoten = "le hoang minh";
+            var LopF = {
+                name : "le hoang minh",
+                age : 21,
+                queQuan : "quang binh",
+            }
+
+            var matran = [
+                '1',
+                '2',
+                '3'
+
+            ]
+
+            var a = 12;
+            var b = 13;
+            var c = 11;
+            document.write(sum);
+
+            document.write(matran)
+
+
+            if(a>b || a>c) {
+                document.write("dung")
+            }
+            else{
+                document.write("sai")
+            }
+
+            var d = 1;
+            if(d==1){
+                document.write("tien 1 buoc")
+            }
+            if(d==2){
+                document.write("tien 2 buoc")
+            }
+            if(d==3){
+                document.write("tien 3 buoc")
+            }
+
+            for(var i=0; i<=10; i++){
+                document.write(i + "<br>")
+            }
+            // giam tu 10 về dùng for(var i=10; i>=0; i--)
+
+            var tich = 1;
+            for(var i=1; i<=75; i++){
+                if(i%5==0 && i%7==0){
+                    tich=tich*i
+
+                }
+
+
+            }
+            document.write(tich + "<br>")
+
+
+
+
+            console.log(LopF);
+        
+
+        </script>
+</body>
+</html>
