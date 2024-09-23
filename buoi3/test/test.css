@@ -3,6 +3,12 @@ html{
     font-size: 62.5%;
     line-height: 1.6rem;
 
+
+}
+
+.container{
+    width: 100%;
+    height: 3000px;
 }
 
 #HANGDAU{
@@ -19,10 +25,11 @@ html{
     font-weight: 550;
     width: 100px;
     height: 40px;
+    font-size: 16px;
 }
 
 .HOM{
-    width: 50px;
+    width: 100px;
     height: 40px;
     text-align: center;
 
@@ -38,21 +45,39 @@ html{
 
 #HOP{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
     font-weight: 700;
     font-size: 11px;
     width: 100%;
+    flex-wrap: nowrap;
+    padding-left: 30px;
 }
+
+.HOM a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+  }
+
 a{
     text-decoration: none;
+    color: #4B0082; /* Màu chữ tím đậm */
+    font-size: 16px; /* Kích thước chữ */
+    padding: 10px; /* Khoảng cách bên trong mỗi mục */
 }
 
 #HANGHAI{
     background-color: rgb(238, 235, 235);
+    
     width: 100%;
-    height: 150px;
+    height: 500px;
     padding-left: 62px;
     padding-top: 24px;
+    background-repeat: no-repeat;
+    background: fixed;
+    background-size: cover;
+    background-image: url(https://file3.qdnd.vn/data/images/0/2022/11/14/vietcuong/1-%201.jpg?dpi=150&quality=100&w=870);
+
 }
 
 #SP{
@@ -61,22 +86,26 @@ a{
 }
 
 #CAT{
-    font-size: 11px;
     padding-left: 45px;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 #HANGBA{
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 900px;
     justify-content: space-around;
     align-items: center;
     margin-top: -138px;
 }
 
 #ONE{
-    width: 30%;
-    height: 370px;
+    width: 45%;
+    height: 650px;
+    
 }
 
 #HANGBA1 :hover {
@@ -108,6 +137,9 @@ a{
 #LOR{
     font-size: 10px;
     margin-left: 6px;
+    display: block; /* Đảm bảo rằng văn bản xuống dưới ảnh */
+    margin-top: 10px; /* Tạo khoảng cách giữa ảnh và văn bản */
+    margin-bottom: 20px;
 }
 
 #READ{
@@ -116,8 +148,8 @@ a{
 }
 
 #TWO{
-    width: 30%;
-    height: 370px;
+    width: 45%;
+    height: 650px;
 }
 
 #ONE2{
@@ -132,8 +164,8 @@ a{
 }
 
 #THREE{
-    width: 30%;
-    height: 370px;
+    width: 45%;
+    height: 650px;
 }
 
 #ONE3{
@@ -149,7 +181,7 @@ a{
 
 #ANHBA{
     border-radius: 3px;
-    height: 40%;
+    height: 50%;
     width: 100%;
 }
 
@@ -179,25 +211,25 @@ a{
 #HANGBON{
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 900px;
     justify-content: space-around;
     align-items: center;
     margin-top: -188px;
 }
 
 #FOUR{
-    width: 30%;
-    height: 370px;
+    width: 45%;
+    height: 650px;
 }
 
 #FIVE{
-    width: 30%;
-    height: 370px;
+    width: 45%;
+    height: 650px;
 }
 
 #SIX{
-    width: 30%;
-    height: 370px;
+    width: 45%;
+    height: 650px;
 }
 
 #ONE6{
@@ -214,7 +246,7 @@ a{
 #HANGNAM{
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 900px;
     justify-content: space-around;
     align-items: center;
     margin-top: -188px;
